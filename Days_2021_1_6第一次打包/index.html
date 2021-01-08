@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>一天的时间安排</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--自定义CSS-->
+    <link href="css/my.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入一言API所需的JS-->
+    <script src="https://yiyanapi.cn/hitokoto/yiyan.js"></script>
+    <!--移动设备优先,为了让 Bootstrap 开发的网站对移动设备友好,确保适当的绘制和触屏缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<!--顶部导航开始-->
+<nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">林逸科技</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://ae.sx.cn/">博客</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://s.aqk4.cn/">监控</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://d.aqk4.cn/">下载站</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--顶部导航结束-->
+
+<!--主体内容开始-->
+<div class="container" style="margin-top: 75px; text-align: center;">
+    <h2>一天的时间安排</h2>
+    <br>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home">工作日</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu1">节假日</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active" style="margin-bottom: 75px;"><br>
+            <div class="card">
+                <div class="card-body">06:50 - 07:00  起床
+                    <div class="progress" style="margin-top: 15px;">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:29.17%;"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-primary text-white">
+                <div class="card-body">07:00 - 07:20  洗漱
+                    <div class="progress" style="margin-top: 15px;">
+                        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30.42%;"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-success text-white">
+                <div class="card-body">07:20 - 07:30  整理床铺 穿衣服
+                    <div class="progress" style="margin-top: 15px;">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:31.25%;"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-info text-white">
+                <div class="card-body">07:30 - 07:50 吃饭
+                    <div class="progress" style="margin-top: 15px;">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:32.63%;"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-warning text-white">
+                <div class="card-body">07:50 - 08:00 开电脑准备上课
+                    <div class="progress" style="margin-top: 15px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:33.33%;"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-danger text-white">
+                <div class="card-body">Danger card</div>
+            </div>
+            <br>
+            <div class="card bg-secondary text-white">
+                <div class="card-body">Secondary card</div>
+            </div>
+            <br>
+            <div class="card bg-dark text-white">
+                <div class="card-body">Dark card</div>
+            </div>
+            <br>
+            <div class="card bg-light text-dark">
+                <div class="card-body">Light card</div>
+            </div>
+            <br>
+            <div class="card" style="text-align: left;">
+                <div class="card-body">
+                    一言：<a class="yiyan">这里是一言API，加载中...</a>
+                </div>
+            </div>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</div>
+<!--主体内容结束-->
+<!--底部内容开始-->
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-bottom">
+    <!-- Navbar text-->
+    <span class="navbar-text col-sm-6">&copy;2020 本站由 <a href="https://www.aqk4.cn/">林逸科技</a> 提供技术支持
+    </span>
+</nav>
+<!--底部内容结束-->
+</body>
+</html>
